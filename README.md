@@ -20,7 +20,7 @@ python3 -m pip install -r requirements.txt
    -------  ------    -----      -----     ------     --  -- -----------
        358      33    36508       1396       3.22    988   1   KeePassXC                                                   
        
-   PS C:\Windows\Temp> .\procdump.exe -accepteula -mm 988 keepassxc.dmp
+   PS C:\Windows\Temp> .\procdump.exe -accepteula -ma 988 keepassxc.dmp
    
    ProcDump v11.0 - Sysinternals process dump utility
    Copyright (C) 2009-2022 Mark Russinovich and Andrew Richards
